@@ -22,13 +22,13 @@ const AIPicker = ({ prompt, setPrompt, generatingImg, handleSubmit }) => {
         ) : (
           <>
             <CustomButton
-              title='AI Logo'
+              title='AI ロゴ'
               type='outline'
               handleClick={() => handleSubmit("logo")}
               customStyles='text-xs'
             />
             <CustomButton
-              title='AI Full'
+              title='AIテクスチャ'
               type='filled'
               handleClick={() => handleSubmit("full")}
               customStyles='text-xs'

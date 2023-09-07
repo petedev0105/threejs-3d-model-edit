@@ -140,7 +140,7 @@ const Customize = () => {
             {...fadeAnimation}
           >
             <CustomButton
-              title='Go back'
+              title='戻る'
               type='filled'
               customStyles='w-fit px-4 py-2.5 text-sm font-bold'
               handleClick={() => {

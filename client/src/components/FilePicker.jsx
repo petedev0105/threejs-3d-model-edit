@@ -12,19 +12,19 @@ const FilePicker = ({ file, setFile, readFile }) => {
           onChange={(e) => setFile(e.target.files[0])}
         />
         <label htmlFor='file-upload' className='filepicker-label'>
-          Upload File
+          ファイルアップロード
         </label>
-        <p>{file === "" ? "No file selected" : file.name}</p>
+        <p className="text-[13px]">{file === "" ? "選択したファイルがない" : file.name}</p>
       </div>
       <div className='flex flex-wrap gap-3 mt-4'>
         <CustomButton
-          title='Logo'
+          title='ロゴマーク'
           type='outline'
           handleClick={() => readFile("logo")}
           customStyles='text-xs'
         />
         <CustomButton
-          title='Full'
+          title='材質'
           type='filled'
           handleClick={() => readFile("full")}
           customStyles='text-xs'
